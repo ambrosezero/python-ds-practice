@@ -1,0 +1,26 @@
+def friend_date(a, b):
+    """Given two friends, do they have any hobbies in common?
+
+    - a: friend #1, a tuple of (name, age, list-of-hobbies)
+    - b: same, for friend #2
+
+    Returns True if they have any hobbies in common, False is not.
+
+        >>> elmo = ('Elmo', 5, ['hugging', 'being nice'])
+        >>> sauron = ('Sauron', 5000, ['killing hobbits', 'chess'])
+        >>> gandalf = ('Gandalf', 10000, ['waving wands', 'chess'])
+
+        >>> friend_date(elmo, sauron)
+        False
+
+        >>> friend_date(sauron, gandalf)
+        True
+    """
+    # ????? why does this version work, with just the implicit boolean....
+    if set(a[2]).intersection(set(b[2])):
+        return True
+    return False
+    # ????? ...but this version does not, when i spell out what i want?
+    # if set(a[2]).intersection(set(b[2])) is True:
+    #     return True
+    # return False
