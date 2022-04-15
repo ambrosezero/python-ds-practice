@@ -17,7 +17,7 @@ def friend_date(a, b):
         True
     """
     # ????? why does this version work, with just the implicit boolean....
-    if set(a[2]).intersection(set(b[2])):
+    if (set(a[2]).intersection(set(b[2]))):
         return True
     return False
     # ????? ...but this version does not, when i spell out what i want?
