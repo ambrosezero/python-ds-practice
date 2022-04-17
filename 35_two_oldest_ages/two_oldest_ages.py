@@ -21,3 +21,10 @@ def two_oldest_ages(ages):
     # you may find it helpful to research the `sorted(iter)` function, which
     # can take *any* type of list-like-thing, and returns a new, sorted list
     # from it.
+    return (sorted(set(ages))[-2], sorted(set(ages))[-1])
+
+    # ?????     in problems such as this one and the one before (#34), my answer is a one line combination of
+    # ?????     methods and functions that fill the requirements, but in many cases the solution is more
+    # ?????     lengthy and slightly more complex. is there a downside to the way i am doing it? is it against
+    # ?????     "best practices" conventions, or is there some other reason it is undesirable aside from
+    # ?????     complexity in reading?

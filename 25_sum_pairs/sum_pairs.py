@@ -21,3 +21,13 @@ def sum_pairs(nums, goal):
         >>> sum_pairs([11, 20, 4, 2, 1, 5], 100)
         ()
     """
+    # rtn_tuple = [(nums[i],nums[i+1]) for i in ]
+    # for i in list(range(0, len(nums)-1)):
+    #     if (nums[i]+nums[i+1] == goal):
+    #         return (nums[i], nums[i+1])
+    # return ()
+    for y in list(range(0, len(nums))):
+        for x in list(range(0, y)):
+            if y != x and nums[x] + nums[y] == goal:
+                return (nums[x], nums[y])
+    return ()

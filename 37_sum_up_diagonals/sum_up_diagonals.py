@@ -18,3 +18,5 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+    # ????? the solution calls this method "too tersely". what does this mean?
+    return sum([matrix[i][i]+matrix[i][-(i+1)] for i in list(range(0, len(matrix)))])

@@ -19,3 +19,7 @@ def find_greater_numbers(nums):
         >>> find_greater_numbers([])
         0
     """
+    rtn_count = 0
+    for i in list(range(0, len(nums)-1)):
+        rtn_count += len([number for number in nums[i:] if number > nums[i]])
+    return rtn_count
